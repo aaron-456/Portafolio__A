@@ -202,6 +202,7 @@ body {
     padding-top: 2.1em;
     padding-left: 2em;
     padding-right: 2em;
+    padding-bottom: 1.3em;
 }
 
 .title__proyectos {
@@ -209,22 +210,91 @@ body {
 }
 
 .imgs__proyects{
-    width: 398px;
-    border-radius: 0.3em;
-    
+    max-width: 300px;
 }
 
 .box__detailsP {
-background-color: #1b1b1b;
-margin-bottom: 1em;
-width: 400px;
-/* border: 1px solid white; */
-border-radius: 0.5em;
-/* padding-left: 1em;
-padding-right: 1em; */
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.esto {
+    width: max-content;
 }
 
 .text__proyect {
+    background-color: #1b1b1b;
+    border-radius: 0.5em;
     font-weight: lighter;
     text-align: center;
+    padding: 1em;
+    max-width: 500px;
+}
+
+
+/*--- Seccion de CONTACTAME ---*/
+
+.container__contactame {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+
+.title__contactame {
+    padding-top: 1.6em;
+    color: white;
+    font-weight: bolder;
+    padding-bottom: 2em;
+}
+
+.form__contactame {
+    background-color: #1b1b1b;
+    max-width: 425px;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    font-family: inherit;
+    border: 1px solid white;
+    border-radius: 0.3rem;
+    color: white;
+    
+}
+
+.box_label {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.5em;
+    font-weight: bold;
+}
+
+.box__input {
+    border: none;
+    margin-top: 1em;
+    padding-top: 2em;
+    color: white;
+    background-color: #474747;
+
+}
+
+.box__message {
+    margin-top: 1em;
+    border: none;
+    padding-top: 5em;
+    background-color: #474747
+}
+
+.btn__form {
+    height: 44px;
+    margin-left: 3em;
+    margin-right: 3em;
+    border-radius: 0.3em;
+    color: white;
+    background-color: #0C134F;
+    border: 1px solid white;
+    font-weight: bold;
+    font-size: 20px;
 }
