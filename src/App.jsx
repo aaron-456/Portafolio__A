@@ -88,27 +88,27 @@ function App() {
 				<div className='box__P'>
 					<div className='box__detailsP'>
 						<a href="https://poke-aaronm.netlify.app/" target="_blank" rel="PokeApi not found ✖">
-							<img className='imgs__proyects' src="../public/pokedex.png" alt='this image not found' />
+							<img className='imgs__proyects' src="./pokedex.png" alt='this image not found' />
 						</a>
 						<p className='text__proyect'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae magni, libero doloremque hic quo cupiditate est nostrum provident dicta. Dignissimos.</p>
 					</div>
 					<div className='box__detailsP'>
 						<a href="https://aaron-users.netlify.app/" target="_blank" rel="UserCrud not found ✖">
-							<img className='imgs__proyects' src="../public/crudUser.png" alt="this image not found" />
+							<img className='imgs__proyects' src="./crudUser.png" alt="this image not found" />
 						</a>
 						<p className='text__proyect'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae magni, libero doloremque hic quo cupiditate est nostrum provident dicta. Dignissimos.</p>
 
 					</div>
 					<div className='box__detailsP'>
 						<a href=" https://aaronm-rickymorty.netlify.app/" target="_blank" rel="Rick and MortyAPI not found ✖">
-							<img className='imgs__proyects' src="../public/rick.png" alt="this image not found" />
+							<img className='imgs__proyects' src="./rick.png" alt="this image not found" />
 						</a>
 						<p className='text__proyect'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae magni, libero doloremque hic quo cupiditate est nostrum provident dicta. Dignissimos.</p>
 
 					</div>
 					<div className='box__detailsP'>
 						<a href="https://aaron-entregable2.netlify.app/" target="_blank" rel="ClimaAPP not found ✖">
-							<img className='imgs__proyects' src="../public/clima.png" alt="this image not found" />
+							<img className='imgs__proyects' src="./clima.png" alt="this image not found" />
 						</a>
 						<p className='text__proyect'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae magni, libero doloremque hic quo cupiditate est nostrum provident dicta. Dignissimos.</p>
 
