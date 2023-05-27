@@ -8,7 +8,6 @@ import { faNode } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 
-
 import './App.css'
 
 
@@ -29,7 +28,7 @@ function App() {
 
 			<div className='container__inicio'>
 				<div className='box__img'>
-					<img className='img__user' src="https://images.unsplash.com/photo-1684188474560-ba8f0bd284ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=725&q=80" alt="" />
+					<img className='img__user' src="../public/myimage.jpg" alt="" />
 				</div>
 				<div className='my__information'>
 					<h1 className='title__info'>Hola que tal , Me llamo Aaron</h1>
@@ -83,11 +82,40 @@ function App() {
 				</div>
 			</div>
 
-			<div>
-				<h2>Mis Proyectos...</h2>
-				<a href="https://poke-aaronm.netlify.app/">
-					<img src="./src/assets/pokedex.png" alt='bebe' />
-				</a>
+
+			<div className='container__proyectos'>
+				<h2 className='title__proyectos'>Mis Proyectos...</h2>
+				<div className='box__P'>
+					<div className='box__detailsP'>
+						<a href="https://poke-aaronm.netlify.app/" target="_blank" rel="PokeApi not found ✖">
+							<img className='imgs__proyects' src="../public/pokedex.png" alt='this image not found' />
+						</a>
+						<p className='text__proyect'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae magni, libero doloremque hic quo cupiditate est nostrum provident dicta. Dignissimos.</p>
+					</div>
+					<div className='box__detailsP'>
+						<a href="https://aaron-users.netlify.app/" target="_blank" rel="UserCrud not found ✖">
+							<img className='imgs__proyects' src="../public/crudUser.png" alt="this image not found" />
+						</a>
+						<p className='text__proyect'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae magni, libero doloremque hic quo cupiditate est nostrum provident dicta. Dignissimos.</p>
+
+					</div>
+					<div className='box__detailsP'>
+						<a href=" https://aaronm-rickymorty.netlify.app/" target="_blank" rel="Rick and MortyAPI not found ✖">
+							<img className='imgs__proyects' src="../public/rick.png" alt="this image not found" />
+						</a>
+						<p className='text__proyect'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae magni, libero doloremque hic quo cupiditate est nostrum provident dicta. Dignissimos.</p>
+
+					</div>
+					<div className='box__detailsP'>
+						<a href="https://aaron-entregable2.netlify.app/" target="_blank" rel="ClimaAPP not found ✖">
+							<img className='imgs__proyects' src="../public/clima.png" alt="this image not found" />
+						</a>
+						<p className='text__proyect'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae magni, libero doloremque hic quo cupiditate est nostrum provident dicta. Dignissimos.</p>
+
+					</div>
+
+				</div>
+
 			</div>
 
 		</div>

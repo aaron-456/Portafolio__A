@@ -6,8 +6,7 @@ body {
 }
 
 /* .App {
-    width: 100%;
-    background-color: red;
+    
 } */
 
 .navigation__bar {
@@ -23,9 +22,19 @@ body {
 }
 
 
+.box__img {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+}
+
 .img__user {
     width: 300px;
+    border-radius: 50%;
+    
 }
+
+
 
 .a {
     text-decoration: none;
@@ -68,7 +77,13 @@ body {
     border-radius: 0.4em;
     font-size: 0.8rem;
     margin-top: 1.5em;
-    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4em;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 900;
 }
 
 /*--- Seccion de ACERCA DE MI ---*/
@@ -96,13 +111,21 @@ body {
     margin-top: 0.7em;
     padding: 1em;
     border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    
     
 }
 
 .infobox__introduc {
+    
     font-weight: lighter;
     text-align: left;
     color: white;
+    
 }
 
 .textinfo__acerca-de-mi {
@@ -123,6 +146,7 @@ body {
     padding-right: 2em;
     color: white;
     margin-top: 2.1em; 
+    margin-bottom: 2.2em;
     
 }
 
@@ -167,4 +191,40 @@ body {
 .tata{
     width: 100px;
     /* color: brown; */
+}
+
+
+/*--- Seccion de MIS PROYECTOS ---*/
+
+.container__proyectos {
+    background-color: #0C134F;
+    color: white;
+    padding-top: 2.1em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.title__proyectos {
+    padding-bottom: 1.3em;
+}
+
+.imgs__proyects{
+    width: 398px;
+    border-radius: 0.3em;
+    
+}
+
+.box__detailsP {
+background-color: #1b1b1b;
+margin-bottom: 1em;
+width: 400px;
+/* border: 1px solid white; */
+border-radius: 0.5em;
+/* padding-left: 1em;
+padding-right: 1em; */
+}
+
+.text__proyect {
+    font-weight: lighter;
+    text-align: center;
 }
