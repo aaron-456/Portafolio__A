@@ -28,7 +28,7 @@ function App() {
 
 			<div className='container__inicio'>
 				<div className='box__img'>
-					<img className='img__user' src="../public/myimage.jpg" alt="" />
+					<img className='img__user' src="./myimage.jpg" alt="" />
 				</div>
 				<div className='my__information'>
 					<h1 className='title__info'>Hola que tal , Me llamo Aaron</h1>
