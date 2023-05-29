@@ -1,3 +1,5 @@
+// IMPORTACIONES DE LA BIBLIOTECA DE Fontawesome
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
@@ -6,47 +8,83 @@ import { faJs } from '@fortawesome/free-brands-svg-icons';
 import { faReact } from '@fortawesome/free-brands-svg-icons';
 import { faNode } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
+import React, { useState, useRef } from 'react';
 
 
 import './App.css'
 
 
 function App() {
+
+
+   const inicioRef = useRef(null);
+   const acercademiRef = useRef(null);
+   const habilidadesRef = useRef(null);
+   const proyectosRef = useRef(null);
+   const contactameRef = useRef(null);
+
+   const navigateToSection = (ref) => {
+      ref.current.scrollIntoView({ behavior: 'smooth' });
+   };
+
+   //Funcion de menu de hanburguesa
+
+   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+   const toggleMenu = () => {
+      setIsMenuOpen(!isMenuOpen);
+   };
+
+
    return (
 
       <div className='App'>
 
          <div className='navigation__bar'>
-            <ul className='navigation__list'>
-               <li className='item'><a className='a' href="">Inicio</a></li>
-               <li className='item'><a className='a' href="">Acerca de mi</a></li>
-               <li className='item'><a className='a' href="">Proyectos</a></li>
-               <li className='item'><a className='a' href="">Contacto</a></li>
+            <div className='menu__button' onClick={toggleMenu}>
+               <FontAwesomeIcon icon={faBars} className='icon__navigation' size='2x' />
+            </div>
+            <ul className={`navigation__list ${isMenuOpen ? 'open' : ''}`}>
+               <li onClick={() => navigateToSection(inicioRef)}>Inicio</li>
+               <li onClick={() => navigateToSection(acercademiRef)}>Acerca de mi</li>
+               <li onClick={() => navigateToSection(habilidadesRef)}>Habilidades</li>
+               <li onClick={() => navigateToSection(proyectosRef)}>Proyectos</li>
+               <li onClick={() => navigateToSection(contactameRef)}>Contacto</li>
             </ul>
          </div>
 
-         <div className='container__inicio'>
+         <section className='container__inicio' ref={inicioRef} id='I'>
             <div className='box__img'>
                <img className='img__user' src="./myimage.jpg" alt="" />
             </div>
             <div className='my__information'>
-               <h1 className='title__info'>Hola que tal , Me llamo Aaron</h1>
-               <p className='text__info'>Soy un apasionado programador web Full Stack, creando soluciones tecnológicas atractivas y funcionales para impulsar proyectos exitosos.</p>
-               <button className='btn__moreinfo'>CV...<div>
-                  <FontAwesomeIcon icon={faCoffee} />
-               </div></button>
-            </div>
-         </div>
+               <h1 className='title__info'>¡Hola! Me llamo Aaron</h1>
+               <p className='text__info'>Me interesa mucho aprender nuevas cosas, aportar valor a cualquier proyecto en el que me involucre, ya que considero que cada contribución cuenta y puede marcar la diferencia en el resultado final.</p>
+               <a className='box__archivoPdf' href="./Cavana CV Aaron Mejia.pdf" download>
+                  <button className='btn__moreinfo'>CV...<div>
+                     <FontAwesomeIcon icon={faCoffee} />
+                  </div></button>
+               </a>
 
-         <div className='container__acerca-de-mi'>
+            </div>
+         </section>
+
+
+         <section className='container__acerca-de-mi' ref={acercademiRef} id='A'>
             <h2 className='title__acerca-de-mi'>Acerca de mi....</h2>
             <div className='box__introductorytext'>
-               <p className='infobox__introduc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nostrum ipsam fuga accusamus, eveniet sint?</p>
+               <p className='infobox__introduc'>Me gusta creer que si uno le dedica tiempo y hace algo con amor, las demás cosas son mucho más fáciles y se dan naturalmente.</p>
             </div>
-            <p className='textinfo__acerca-de-mi'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium fuga perspiciatis ipsa consequuntur totam natus, exercitationem libero sunt aspernatur ut quas aperiam deleniti, facilis debitis incidunt atque amet in facere. Sapiente reiciendis totam reprehenderit beatae quae laudantium, officiis deleniti perspiciatis, aspernatur delectus voluptates. Omnis assumenda asperiores quas id similique reiciendis voluptates, eligendi, modi dicta corrupti consequuntur, ratione autem ea molestias repudiandae perspiciatis culpa magni aliquam officiis accusantium. Veritatis, corporis ex?</p>
-         </div>
+            <p className='textinfo__acerca-de-mi'>Soy un desarrollador web Full stack y me encanta el mundo de la programación y la tecnología. Cada día me esfuerzo por aprender y perfeccionar mis habilidades, buscando nuevas formas de encontrar soluciones innovadoras. Me gusta colaborar en proyectos desafiantes, donde puedo aplicar lo que he aprendido y seguir creciendo profesionalmente. Me gusta esforzarme por explorar nuevas tecnologías y lenguajes.
 
-         <div className='container__conocimientos-y-habilidades'>
+               Estoy emocionado por seguir creciendo en este apasionante campo y contribuir al éxito de futuros proyectos.</p>
+         </section>
+
+
+         <section className='container__conocimientos-y-habilidades' ref={habilidadesRef} id='h'>
             <h2 className='title__skils'>Conocimientos y habilidades</h2>
 
             <div className='container_child-conocimientos-etc'>
@@ -79,46 +117,59 @@ function App() {
                   <p className='text_icons'>Git Hub</p>
                </div>
             </div>
-         </div>
+         </section>
 
 
-         <div className='container__proyectos'>
+         <section className='container__proyectos' ref={proyectosRef} id='P'>
             <h2 className='title__proyectos'>Mis Proyectos...</h2>
             <div className='box__P'>
-               <div className='box__detailsP'>
-                  <a className='esto' href="https://poke-aaronm.netlify.app/" target="_blank" rel="PokeApi not found ✖">
-                     <img className='imgs__proyects' src="./pokedex.png" alt='this image not found' />
-                  </a>
-                  <p className='text__proyect'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae magni, libero doloremque hic quo cupiditate est nostrum provident dicta. Dignissimos.</p>
+
+               <div className='columna'>
+                  <div className='box__detailsP'>
+                     <a className='esto' href="https://poke-aaronm.netlify.app/" target="_blank" rel="PokeApi not found ✖">
+                        <img className='imgs__proyects' src="./pokedex.png" alt='this image not found' />
+                     </a>
+                     <p className='text__proyect'>El proyecto de la PokemonAPI se trata de ingresar con nuestro nombre y buscar Pokémones. Gracias a que nos conectamos con una API, podemos obtener la información de los Pokémones correspondientes y sus características.</p>
+                  </div>
+
+                  <div className='box__detailsP'>
+                     <a className='esto' href="https://aaron-users.netlify.app/" target="_blank" rel="UserCrud not found ✖">
+                        <img className='imgs__proyects' src="./crudUser.png" alt="this image not found" />
+                     </a>
+                     <p className='text__proyect'>La aplicación de User CRUD me gustó mucho, ya que pudimos conectarnos a una API y crear usuarios con sus nombres, correos y fechas de nacimiento. Además de eso, podemos eliminar y editar su información. Esta aplicación fue creada con React y con dependencias como react-dom, react-hook-form y otras.</p>
+
+                  </div>
                </div>
 
-               <div className='box__detailsP'>
-                  <a className='esto' href="https://aaron-users.netlify.app/" target="_blank" rel="UserCrud not found ✖">
-                     <img className='imgs__proyects' src="./crudUser.png" alt="this image not found" />
-                  </a>
-                  <p className='text__proyect'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae magni, libero doloremque hic quo cupiditate est nostrum provident dicta. Dignissimos.</p>
 
+
+               <div className='columna'>
+                  <div className='box__detailsP'>
+                     <a className='esto' href=" https://aaronm-rickymorty.netlify.app/" target="_blank" rel="Rick and MortyAPI not found ✖">
+                        <img className='imgs__proyects' src="./rick.png" alt="this image not found" />
+                     </a>
+                     <p className='text__proyect'>Este proyecto es uno de los que más me gustó, en él nos conectamos a una API y en él podemos buscar todos los universos de la serie "Rick y Morty" y también encontrar personajes de la serie.</p>
+                  </div>
+
+                  <div className='box__detailsP'>
+                     <a className='esto' href="https://aaron-entregable2.netlify.app/" target="_blank" rel="ClimaAPP not found ✖">
+                        <img className='imgs__proyects' src="./clima.png" alt="this image not found" />
+                     </a>
+                     <p className='text__proyect'>Esta es la aplicación del clima. En ella también nos conectamos con una API del clima y la configuramos para que tenga todas sus funcionalidades, como por ejemplo poder cambiar de Celsius a Fahrenheit. También podemos ver cómo está el clima según el lugar en el que nos encontremos.
+
+                        Esta aplicación la creé con React. Utilicé Vite como servidor de desarrollo, con dependencias como react-dom.</p>
+
+                  </div>
                </div>
 
-               <div className='box__detailsP'>
-                  <a className='esto' href=" https://aaronm-rickymorty.netlify.app/" target="_blank" rel="Rick and MortyAPI not found ✖">
-                     <img className='imgs__proyects' src="./rick.png" alt="this image not found" />
-                  </a>
-                  <p className='text__proyect'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae magni, libero doloremque hic quo cupiditate est nostrum provident dicta. Dignissimos.</p>
-               </div>
 
-               <div className='box__detailsP'>
-                  <a className='esto' href="https://aaron-entregable2.netlify.app/" target="_blank" rel="ClimaAPP not found ✖">
-                     <img className='imgs__proyects' src="./clima.png" alt="this image not found" />
-                  </a>
-                  <p className='text__proyect'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae magni, libero doloremque hic quo cupiditate est nostrum provident dicta. Dignissimos.</p>
 
-               </div>
 
             </div>
-         </div>
+         </section>
 
-         <div className='container__contactame'>
+
+         <section className='container__contactame' ref={contactameRef} id='C'>
             <h2 className='title__contactame'>Contactame...</h2>
             <form className='form__contactame' action="https://formspree.io/f/xyyaabye" method="POST">
                <label className='box_label' htmlFor="name">
@@ -137,8 +188,22 @@ function App() {
 
                <button className='btn__form' type="Enviar">Enviar</button>
             </form>
-         </div>
+         </section>
 
+
+         <section className='container__social'>
+            <div className='linea-delgada1'></div>
+            <a href="https://www.linkedin.com/in/aaron-mejia-317b52260/" target="_blank">
+               <FontAwesomeIcon className='icons__social' size='2x' icon={faLinkedin} />
+            </a>
+            <a href="https://github.com/aaron-456" target="_blank">
+               <FontAwesomeIcon className='icons__social-github' size='2x' icon={faGithub} />
+            </a>
+            <div className='linea-delgada2'></div>
+
+
+         </section>
+         <p className='text__copyricth'> ©Aaron Mejia 2023. All Rights Reserved</p>
       </div>
 
    )
