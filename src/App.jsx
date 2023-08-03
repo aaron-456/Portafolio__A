@@ -63,7 +63,7 @@ function App() {
             <div className='my__information'>
                <h1 className='title__info'>¡Hola! Me llamo Aaron</h1>
                <p className='text__info'>Me interesa mucho aprender nuevas cosas, aportar valor a cualquier proyecto en el que me involucre, ya que considero que cada contribución cuenta y puede marcar la diferencia en el resultado final.</p>
-               <a className='box__archivoPdf' href="./Cavana CV Aaron Mejia.pdf" download>
+               <a className='box__archivoPdf' href="./CV+AaronMejia.pdf" download>
                   <button className='btn__moreinfo'>CV...<div>
                      <FontAwesomeIcon icon={faCoffee} />
                   </div></button>
