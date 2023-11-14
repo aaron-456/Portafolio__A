@@ -72,7 +72,6 @@
  
 @media (min-width: 768px) {
     .box__P {
-      background-color: aqua;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 70px; 
