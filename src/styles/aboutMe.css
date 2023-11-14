@@ -1,0 +1,49 @@
+/*------------ Seccion de ACERCA DE MI ------------*/
+
+.container__acerca-de-mi {
+  /* background-color: #0c134f; */
+  margin-top: 7em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.box__Title {
+  margin-top: 1.7em;
+  margin-bottom: 1.8em ;
+  width: max-content;
+}
+  
+.title__acerca-de-mi {
+  color: white;
+  font-weight: bolder;
+}
+
+.hr__title {
+  border: 1px solid #219C90;
+}
+  
+.box__introductorytext {
+  /* background-color:#2a4db8; */
+	background-color:#2d2e31;
+  box-shadow: 0px 0px 10px 5px #1b1b1b;
+  width: 340px;
+  margin-top: 0.7em;
+  padding: 1em;
+  border-radius: 0.3em;
+  margin: auto;
+}
+  
+.infobox__introduc {
+  font-weight: lighter;
+  text-align: left;
+  color: white;
+}
+  
+.textinfo__acerca-de-mi {
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 20px;
+  font-weight: 200;
+  color: white;
+  padding-top: 1.4em;
+}

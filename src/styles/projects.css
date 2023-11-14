@@ -1,0 +1,78 @@
+/*------------ Seccion de MIS PROYECTOS ------------*/
+
+.projects__container {
+  color: white;
+  padding-top: 2.1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 1.3em;
+}
+
+.title__proyectos {
+    padding-bottom: 1.3em;
+}
+
+.cardProject__box {
+  /* background-color: #2d2e31; */
+  /* background-color: #2a4db8; */
+  border: 2px solid  #2a4db8;
+  border-radius: 5px;
+  width: 390px;
+  height: 260px;
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  }
+
+.imgs__proyects {
+  width: 320px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: -70px;
+}
+
+.imgProyect__box {
+  margin: 0 auto;
+}
+
+.title__card {
+  margin-top: 1em;
+ text-align: center;
+}
+
+.text__project {
+  color: #85878e;
+  font-weight: 300;
+  text-align: center;
+  padding: 1em;
+  font-size: 14px;
+}
+
+.Link__web {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+
+/*--- Seccion de MIS PROYECTOS DESTOK ---*/
+
+
+
+  @media (min-width: 768px) {
+    .box__introductorytext {
+        width: 500px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .box__P {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
+        grid-gap: 20px; /* Espacio entre las columnas */
+    }
+  }
