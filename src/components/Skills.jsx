@@ -10,16 +10,11 @@ import { faGitAlt } from "@fortawesome/free-brands-svg-icons";
 
 const Skills = ({ habilidadesRef, FontAwesomeIcon }) => {
 	return (
-		<section
-			className="container__skills"
-			ref={habilidadesRef}
-			id="h"
-		>
+		<section className="container__skills" ref={habilidadesRef} id="h">
 			<div className="box__titleSkills">
 				<h2 className="title__skill">Conocimientos y habilidades</h2>
 				<hr className="hr__title" />
 			</div>
-
 
 			<div className="container__boxIcons">
 				<div className="box__icons">
@@ -67,7 +62,8 @@ const Skills = ({ habilidadesRef, FontAwesomeIcon }) => {
 					<p className="text_icons">Git</p>
 				</div>
 				<div className="box__icons">
-					<svg className="tata"
+					<svg
+						className="tata"
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 128 128"
 					>
@@ -81,7 +77,8 @@ const Skills = ({ habilidadesRef, FontAwesomeIcon }) => {
 				</div>
 
 				<div className="box__icons">
-					<svg className="tata"
+					<svg
+						className="tata"
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 24 24"
 					>

@@ -8,8 +8,21 @@
   padding-bottom: 1.3em;
 }
 
-.title__proyectos {
-    padding-bottom: 1.3em;
+.boxTitle__projects {
+  width: max-content;
+  margin-bottom: 2.5em;
+}
+
+.sisisi {
+  display: flex;
+  justify-content: center;
+}
+
+.box__P {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  gap: 3em;
 }
 
 .cardProject__box {
@@ -22,7 +35,7 @@
   margin-top: 5em;
   display: flex;
   flex-direction: column;
-  }
+}
 
 .imgs__proyects {
   width: 320px;
@@ -55,24 +68,13 @@
 
 
 
-
 /*--- Seccion de MIS PROYECTOS DESTOK ---*/
-
-
-
-  @media (min-width: 768px) {
-    .box__introductorytext {
-        width: 500px;
-        height: 100px;
-        display: flex;
-        align-items: center;
-    }
-  }
-
-  @media (min-width: 768px) {
+ 
+@media (min-width: 768px) {
     .box__P {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
-        grid-gap: 20px; /* Espacio entre las columnas */
-    }
+      background-color: aqua;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 70px; 
   }
+}

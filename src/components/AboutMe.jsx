@@ -1,8 +1,7 @@
 // import React from "react";
-import "../styles/aboutMe.css"
+import "../styles/aboutMe.css";
 
 const AboutMe = ({ acercademiRef }) => {
-
 	return (
 		<section className="container__acerca-de-mi" ref={acercademiRef} id="A">
 			<div className="box__Title">
