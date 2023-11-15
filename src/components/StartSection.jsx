@@ -17,7 +17,7 @@ const StartSection = ({ FontAwesomeIcon, inicioRef }) => {
 					contribución cuenta y puede marcar la diferencia en el resultado
 					final.
 				</p>
-				<a className="box__archivoPdf" href="./CV+AaronMejia.pdf" download>
+				<a className="box__archivoPdf" href="./CV Aaron Mejia v3.pdf" download>
 					<button className="btn__moreinfo">
 						CV...
 						<div>

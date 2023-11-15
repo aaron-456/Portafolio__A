@@ -3,7 +3,7 @@ import "../styles/aboutMe.css";
 
 const AboutMe = ({ acercademiRef }) => {
 	return (
-		<section className="container__acerca-de-mi" ref={acercademiRef} id="A">
+		<section className="container__AboutMe" ref={acercademiRef} id="A">
 			<div className="box__Title">
 				<h2 className="title__acerca-de-mi">Acerca de mi....</h2>
 				<hr className="hr__title" />

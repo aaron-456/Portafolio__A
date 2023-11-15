@@ -51,8 +51,8 @@ const Projects = ({ proyectosRef }) => {
 							<h3 className="title__card">Crud de usuarios</h3>
 							<p className="text__project">
 								Desarrollé un CRUD de usuarios que permite la creación,
-								eliminación y edición de perfiles. Utilicé tecnologías como React,
-								HTML, CSS, Node.js, JavaScript y PostgreSQL.
+								eliminación y edición de perfiles. Utilicé tecnologías como
+								React, HTML, CSS, Node.js, JavaScript y PostgreSQL.
 							</p>
 						</div>
 					</a>
@@ -106,7 +106,6 @@ const Projects = ({ proyectosRef }) => {
 					</a>
 				</div>
 			</div>
-
 		</section>
 	);
 };

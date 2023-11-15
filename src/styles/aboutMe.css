@@ -1,10 +1,10 @@
-/*------------ Seccion de ACERCA DE MI ------------*/
+/*------------ About Me ------------*/
 
-.container__acerca-de-mi {
-  /* background-color: #0c134f; */
+.container__AboutMe {
   margin-top: 7em;
   padding-left: 2em;
   padding-right: 2em;
+  /* background-color: #0c134f; */
 }
 
 .box__Title {
