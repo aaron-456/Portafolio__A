@@ -10,7 +10,8 @@ body {
 .container__AboutMe,
 .container__skills,
 .projects__container,
-.contactMe__container {
+.contactMe__container,
+.navigation__bar {
   max-width: 1300px;
   margin: 0 auto;
 }

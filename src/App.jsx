@@ -10,7 +10,6 @@ import Projects from "./components/Projects";
 import ContactMe from "./components/ContactMe";
 import Social from "./components/Social";
 
-
 function App() {
 	const inicioRef = useRef(null);
 	const acercademiRef = useRef(null);

@@ -3,10 +3,10 @@
 .container__skills {
   background-color: #1b1b1b;
   margin-top: 7em;
+  margin-bottom: 7em;
   padding-left: 2em;
   padding-right: 2em;
   color: white;
-  margin-bottom: 2.2em;
 }
 
 .box__titleSkills {
