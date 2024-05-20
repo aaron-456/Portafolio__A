@@ -15,9 +15,9 @@
   background-color: #1b1b1b;
 }
 
-.img__logo {
+.img-logo {
   margin-left: 1em;
-  width: 105px;
+  width: 90px;
 }
 
 .navigation__list {
@@ -67,8 +67,8 @@
   }
 
 
-  .img__logo {
-    width: 140px;
+  .img-logo {
+    width: 10s0px;
   }
 
   .navigation__list {

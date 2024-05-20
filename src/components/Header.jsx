@@ -21,9 +21,12 @@ const Header = ({
   return (
     <div className="header__container">
       <header className="navigation__bar">
-
         <div className="box__logo">
-          <img className="img__logo" src="logoAaron.PNG" alt="logoPorfolio.." />
+          <img
+            className="img-logo"
+            src="logo-aaron.png"
+            alt="logo not foud..."
+          />
         </div>
         <ul className={`navigation__list ${isOpen ? "menu" : ""}`}>
           <li onClick={() => navigateToSection(inicioRef)}>Inicio</li>
@@ -44,7 +47,6 @@ const Header = ({
         </div>
       </header>
     </div>
-
   );
 };
 export default Header;

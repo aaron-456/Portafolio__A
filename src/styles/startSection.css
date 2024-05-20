@@ -1,68 +1,139 @@
 /*------------ Seccion de INICIO ------------*/
 
-.container__inicio {
+.container-home {
   display: flex;
   flex-direction: column;
+  display: flex;
   padding-left: 2em;
   padding-right: 2em;
   margin-top: 7em;
 }
 
-.box__img {
+.img-home-box {
   justify-content: center;
   padding-bottom: 1em;
   display: flex;
 }
-  
-.img__user {
+
+.profile-picture {
   border-radius: 50%;
   width: 300px;
 }
-  
-.my__information {
-  flex-direction: column;
-  align-items: center;
+
+.information-home-box {
   display: flex;
+  flex-direction: column;
+  /* align-items: center; */
 }
-  
-.title__info {
-  padding-top: 0.4em;
+
+.title-home {
   padding: 0.2em;
-  text-align: center;
-  color: #b0daff;
-  color: white;
-  }
-  
-.text__info {
+  padding-bottom: 0.8em;
   text-align: center;
   color: white;
 }
-  
-  .btn__moreinfo {
-    /* background-color: #6372f2; */
-    /* background-color: #219C90; */
-    /* background-color:#00ffab ; */
-    background-color: #04BC94;
-    width: 175px;
-    height: 60px;
-    border-radius: 0.4em;
-    font-size: 0.8rem;
-    margin-top: 3em;
-    display: flex;
+
+.paragraph-home {
+  text-align: center;
+  color: white;
+  margin-bottom: 3em;
+}
+
+.btn-my-Work {
+  /* background-color: #6372f2; */
+  /* background-color: #219C90; */
+  /* background-color:#00ffab ; */
+  background-color: #04bc94;
+  /* width: 175px;
+  height: 60px;
+  border-radius: 0.4em;
+  font-size: 0.8rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4em;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 900;
+  transition: background-color 0.3s ease; */
+  /* color: #fff; */
+}
+
+.btn-my-Work {
+  width: 175px;
+  height: 60px;
+  background-image: linear-gradient(
+    90deg,
+    #00c0ff 0%,
+    #ffcf00 49%,
+    #fc4f4f 80%,
+    #00c0ff 100%
+  );
+  border-radius: 5px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.btn-my-Work:after {
+  content: attr(alt);
+  width: 169px;
+  height: 54px;
+  background-color: #191919;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-my-Work:hover {
+  animation: slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
+}
+
+/* .btn-my-Work:hover {
+  background-color: #d6b436;
+} */
+
+@media (min-width: 1010px) {
+  .container-home {
+    margin-top: 10em;
     justify-content: center;
+    flex-direction: row-reverse;
     align-items: center;
-    gap: 0.4em;
-    font-family: "Nunito", sans-serif;
-    font-size: 0.9rem;
-    font-weight: 900;
-    transition: background-color 0.3s ease;
+    gap: 3em;
   }
-  
-  
-  .btn__moreinfo:hover {
-      background-color: #d6b436;
+
+  .profile-picture {
+    width: 380px;
   }
-  
-  .box__archivoPdf {
-      text-decoration: none;
+
+  .title-home,
+  .paragraph-home {
+    text-align: left;
   }
+  .title-home {
+    font-size: 33px;
+  }
+
+  .paragraph-home {
+    font-size: 18px;
+    max-width: 700px;
+  }
+
+  .information-home-box {
+
+  }
+
+  .btn-my-Work {
+    margin: 0;
+  }
+}
